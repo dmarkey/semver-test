@@ -13,7 +13,7 @@ jobs:
     
     steps:
       - name: Release
-        uses: dmarkey/calver-test@v4
+        uses: dmarkey/calver-test@v5
         with:
           mainline-branch: main
           pr-number: "${{ github.event.pull_request.number }}"
