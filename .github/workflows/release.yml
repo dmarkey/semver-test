@@ -13,7 +13,7 @@ jobs:
     
     steps:
       - name: Release
-        uses: dmarkey/calver-test@v1
+        uses: dmarkey/calver-test@v2
         with:
           release_branch: main
           pr-number: {{ github.event.pull_request.id }}
