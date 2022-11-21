@@ -12,9 +12,10 @@ jobs:
     if: github.event.pull_request.merged
     
     steps:
-      - name: Tag
-        uses: K-Phoen/semver-release-action@master
+      - name: Release
+        uses: dmarkey/calver-test@v1
         with:
           release_branch: main
+          pr-number: {{ github.event.pull_request.id }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
