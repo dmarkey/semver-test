@@ -16,6 +16,6 @@ jobs:
         uses: dmarkey/calver-test@v2
         with:
           release_branch: main
-          pr-number: {{ github.event.pull_request.number }}
+          pr-number: "3"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
